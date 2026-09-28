@@ -16,13 +16,23 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        /* Variantes del sistema de diseño Aguaymanto */
+        cta: "bg-accent text-accent-foreground font-semibold shadow-[var(--shadow-accent)] hover:bg-accent-light hover:-translate-y-0.5 transition-all duration-300",
+        campo:
+          "bg-primary text-primary-foreground font-semibold shadow-[var(--shadow-soft)] hover:bg-primary-light hover:-translate-y-0.5 transition-all duration-300",
+        contorno:
+          "border border-primary/25 bg-transparent text-primary font-semibold hover:bg-primary hover:text-primary-foreground transition-all duration-300",
+        claro:
+          "border border-primary-foreground/40 bg-primary-foreground/5 text-primary-foreground font-semibold backdrop-blur-sm hover:bg-primary-foreground hover:text-primary transition-all duration-300",
       },
       size: {
         default: "h-9 px-4 py-2",
         sm: "h-8 rounded-md px-3 text-xs",
         lg: "h-10 rounded-md px-8",
+        xl: "h-12 rounded-md px-8 text-base",
         icon: "h-9 w-9",
       },
+
     },
     defaultVariants: {
       variant: "default",
