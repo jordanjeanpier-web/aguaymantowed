@@ -76,7 +76,7 @@ export function SeccionPorQue() {
         </Reveal>
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
           {razones.map((r, i) => {
-            const Icon = iconosRazones[i % iconosRazones.length];
+            const Icon = iconosRazones[i % iconosRazones.length]!;
             return (
               <Reveal key={r.titulo} delay={i * 80}>
                 <article className="h-full rounded-xl border border-border bg-card p-6 text-center shadow-[var(--shadow-soft)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-card)]">

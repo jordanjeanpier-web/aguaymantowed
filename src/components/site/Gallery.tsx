@@ -73,8 +73,8 @@ export function Gallery() {
             <ChevronLeft className="h-5 w-5" aria-hidden="true" />
           </button>
           <img
-            src={galeria[abierto].src}
-            alt={galeria[abierto].alt}
+            src={galeria[abierto]!.src}
+            alt={galeria[abierto]!.alt}
             className="max-h-[82vh] w-auto max-w-[92vw] rounded-lg object-contain"
             onClick={(e) => e.stopPropagation()}
           />

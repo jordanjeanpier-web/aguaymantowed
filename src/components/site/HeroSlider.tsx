@@ -15,8 +15,8 @@ const slides = [
     texto:
       "Producimos y comercializamos aguaymanto seleccionado, llevando el sabor y la calidad del campo peruano a nuestros clientes.",
     acciones: [
-      { label: "Conocer nuestros productos", to: "/productos", hash: undefined, variant: "cta" as const },
-      { label: "Solicitar cotización", to: "/contacto", hash: "cotizacion", variant: "claro" as const },
+      { label: "Conocer nuestros productos", to: "/productos" as const, hash: undefined, variant: "cta" as const },
+      { label: "Solicitar cotización", to: "/contacto" as const, hash: "cotizacion", variant: "claro" as const },
     ],
   },
   {
@@ -26,7 +26,7 @@ const slides = [
     texto:
       "Trabajamos para ofrecer productos agrícolas de calidad, con compromiso, responsabilidad y visión de crecimiento.",
     acciones: [
-      { label: "Conoce nuestra empresa", to: "/quienes-somos", hash: undefined, variant: "cta" as const },
+      { label: "Conoce nuestra empresa", to: "/quienes-somos" as const, hash: undefined, variant: "cta" as const },
     ],
   },
   {
@@ -35,7 +35,7 @@ const slides = [
     titulo: "Natural, versátil y de excelente calidad",
     texto:
       "Un fruto peruano con gran presencia comercial, cuidado desde la cosecha hasta la entrega.",
-    acciones: [{ label: "Ver productos", to: "/productos", hash: undefined, variant: "cta" as const }],
+    acciones: [{ label: "Ver productos", to: "/productos" as const, hash: undefined, variant: "cta" as const }],
   },
 ];
 
@@ -102,7 +102,7 @@ export function HeroSlider() {
                 <div className="mt-8 flex flex-wrap gap-3">
                   {slide.acciones.map((a) => (
                     <Button key={a.label} asChild variant={a.variant} size="xl">
-                      <Link to={a.to} hash={a.hash}>
+                      <Link to={a.to} {...(a.hash ? { hash: a.hash } : {})}>
                         {a.label}
                       </Link>
                     </Button>

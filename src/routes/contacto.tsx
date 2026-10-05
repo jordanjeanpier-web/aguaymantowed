@@ -13,9 +13,8 @@ const descripcion =
   "Contáctanos por WhatsApp, teléfono, correo o formulario para consultas comerciales y cotizaciones de aguaymanto peruano.";
 
 export const Route = createFileRoute("/contacto")({
-  validateSearch: (search: Record<string, unknown>) => ({
-    producto: typeof search.producto === "string" ? search.producto : undefined,
-  }),
+  validateSearch: (search: Record<string, unknown>): { producto?: string } =>
+    typeof search["producto"] === "string" ? { producto: search["producto"] } : {},
   head: () => ({
     meta: [
       { title: titulo },

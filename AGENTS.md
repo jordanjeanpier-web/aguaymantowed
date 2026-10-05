@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Editable company content lives in src/config/site.ts (contact, WhatsApp, socials) and src/data/* (products, services, news, institutional texts) — so the owner can update content without touching layouts.

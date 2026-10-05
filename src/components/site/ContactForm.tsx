@@ -6,7 +6,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { productos } from "@/data/productos";
 
-type Errores = Record<string, string>;
+type Errores = Partial<Record<"nombre" | "correo" | "telefono" | "mensaje", string>>;
 
 const tiposCliente = [
   "Cliente particular",
@@ -17,7 +17,7 @@ const tiposCliente = [
   "Otro",
 ];
 
-export function ContactForm({ productoInicial }: { productoInicial?: string }) {
+export function ContactForm({ productoInicial }: { productoInicial?: string | undefined }) {
   const [errores, setErrores] = useState<Errores>({});
   const [enviado, setEnviado] = useState(false);
 
@@ -39,7 +39,7 @@ export function ContactForm({ productoInicial }: { productoInicial?: string }) {
 
     setErrores(nuevos);
     if (Object.keys(nuevos).length > 0) {
-      document.getElementById(`campo-${Object.keys(nuevos)[0]}`)?.focus();
+      document.getElementById(`campo-${Object.keys(nuevos)[0] ?? ""}`)?.focus();
       return;
     }
 
@@ -180,8 +180,8 @@ function Campo({
 }: {
   id: string;
   label: string;
-  error?: string;
-  requerido?: boolean;
+  error?: string | undefined;
+  requerido?: boolean | undefined;
   children: React.ReactNode;
 }) {
   return (
