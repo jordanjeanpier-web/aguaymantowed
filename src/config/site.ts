@@ -25,6 +25,9 @@ export const site = {
   whatsappMensaje:
     "Hola, estoy interesado en sus productos de aguaymanto y quisiera recibir información.",
 
+  // ID del video de YouTube que se muestra en el banner principal (reemplázalo por el video de la empresa)
+  videoYoutubeId: "aG-EexHoO10",
+
   redes: {
     facebook: "#",
     instagram: "#",
