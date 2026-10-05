@@ -1,7 +1,9 @@
 import { useCallback, useEffect, useState } from "react";
 import { Link } from "@tanstack/react-router";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { VideoModal } from "@/components/site/VideoModal";
+import { site } from "@/config/site";
 import hero1 from "@/assets/hero-1.jpg";
 import hero2 from "@/assets/hero-2.jpg";
 import hero3 from "@/assets/hero-3.jpg";
@@ -41,13 +43,16 @@ const slides = [
 
 export function HeroSlider() {
   const [index, setIndex] = useState(0);
+  const [video, setVideo] = useState(false);
 
   const ir = useCallback((n: number) => setIndex(((n % slides.length) + slides.length) % slides.length), []);
+  const cerrarVideo = useCallback(() => setVideo(false), []);
 
   useEffect(() => {
+    if (video) return;
     const id = window.setInterval(() => setIndex((i) => (i + 1) % slides.length), 5000);
     return () => window.clearInterval(id);
-  }, [index]);
+  }, [index, video]);
 
   return (
     <section
@@ -108,6 +113,17 @@ export function HeroSlider() {
                     </Button>
                   ))}
                 </div>
+                <button
+                  type="button"
+                  onClick={() => setVideo(true)}
+                  className="group mt-6 inline-flex items-center gap-3 text-primary-foreground focus-visible:outline-none"
+                >
+                  <span className="relative inline-flex h-14 w-14 items-center justify-center rounded-full bg-accent text-accent-foreground shadow-[var(--shadow-accent)] transition-transform group-hover:scale-110 group-focus-visible:ring-2 group-focus-visible:ring-accent-light">
+                    <span className="absolute inset-0 animate-ping rounded-full bg-accent/40" aria-hidden="true" />
+                    <Play className="relative h-6 w-6 translate-x-0.5 fill-current" aria-hidden="true" />
+                  </span>
+                  <span className="text-sm font-bold tracking-wider uppercase">Ver video</span>
+                </button>
               </div>
             ))}
           </div>
@@ -152,6 +168,7 @@ export function HeroSlider() {
           </div>
         </div>
       </div>
+      {video && <VideoModal videoId={site.videoYoutubeId} onClose={cerrarVideo} />}
     </section>
   );
 }
