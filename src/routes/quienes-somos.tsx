@@ -160,7 +160,7 @@ function QuienesSomos() {
           </Reveal>
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {compromiso.map((c, i) => {
-              const Icon = iconosCompromiso[i % iconosCompromiso.length];
+              const Icon = iconosCompromiso[i % iconosCompromiso.length]!;
               return (
                 <Reveal key={c.titulo} delay={i * 100}>
                   <article className="h-full rounded-xl border border-border bg-card p-7 text-center shadow-[var(--shadow-soft)]">
