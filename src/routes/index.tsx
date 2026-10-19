@@ -16,7 +16,7 @@ import { noticias } from "@/data/noticias";
 import { mision, vision } from "@/data/empresa";
 import galCampo from "@/assets/gal-campo.jpg";
 
-const titulo = "Aguaymanto Perú | Producción y venta de aguaymanto peruano";
+const titulo = "Aguaymanto Perú | Producción y venta de aguaymanto peruano - Limatambo";
 const descripcion =
   "Producimos y comercializamos aguaymanto peruano seleccionado. Venta al por mayor y atención a restaurantes, tiendas y distribuidores. Solicita tu cotización.";
 
