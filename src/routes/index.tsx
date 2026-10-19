@@ -93,8 +93,8 @@ function Index() {
         <div className="container-site">
           <Reveal>
             <SectionTitle
-              etiqueta="Nuestros productos"
-              titulo="Aguaymanto seleccionado para cada tipo de cliente"
+              etiqueta="Nuestros productos bandera"
+              titulo="Aguaymanto para cada necesidad de los peruaos"
               align="center"
             />
           </Reveal>
