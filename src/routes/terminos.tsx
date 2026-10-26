@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { site } from "@/config/site";
 
-const titulo = "Términos y condiciones | Aguaymanto Perú";
+const titulo = "Términos y condiciones | El Dulce Aguaymanto";
 const descripcion =
   "Términos y condiciones de uso del sitio web y de las consultas comerciales realizadas a través de él.";
 
