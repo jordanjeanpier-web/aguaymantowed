@@ -81,14 +81,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Aguaymanto Perú | Producción y venta de aguaymanto peruano" },
+      { title: "El Dulce Aguaymanto | Producción y venta de aguaymanto peruano" },
       {
         name: "description",
         content:
           "Empresa peruana dedicada a la producción, comercialización y venta de aguaymanto fresco para clientes particulares, restaurantes, tiendas y mayoristas.",
       },
-      { name: "author", content: "Aguaymanto Perú" },
-      { property: "og:site_name", content: "Aguaymanto Perú" },
+      { name: "author", content: "El Dulce Aguaymanto" },
+      { property: "og:site_name", content: "El Dulce Aguaymanto" },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "es_PE" },
       { name: "twitter:card", content: "summary_large_image" },

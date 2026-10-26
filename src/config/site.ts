@@ -4,8 +4,8 @@
  */
 
 export const site = {
-  nombre: "AGUAYMANTO PERÚ",
-  nombreCorto: "Aguaymanto Perú",
+  nombre: "EL DULCE AGUAYMANTO",
+  nombreCorto: "El Dulce Aguaymanto",
   eslogan: "Calidad y compromiso desde el campo peruano.",
   descripcion:
     "Producción, comercialización y venta de aguaymanto peruano seleccionado para clientes particulares, restaurantes, tiendas, distribuidores y mayoristas.",

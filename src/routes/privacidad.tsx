@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { site } from "@/config/site";
 
-const titulo = "Política de privacidad | Aguaymanto Perú";
+const titulo = "Política de privacidad | El Dulce Aguaymanto";
 const descripcion =
   "Política de privacidad sobre el tratamiento de los datos enviados a través del formulario de contacto del sitio.";
 
