@@ -6,7 +6,7 @@
 export const site = {
   nombre: "EL DULCE AGUAYMANTO",
   nombreCorto: "El Dulce Aguaymanto",
-  eslogan: "Calidad y compromiso desde el campo peruano.",
+  eslogan: "Producción y venta de aguaymanto fresco de Limatambo, Cusco.",
   descripcion:
     "Producción, comercialización y venta de aguaymanto peruano seleccionado para clientes particulares, restaurantes, tiendas, distribuidores y mayoristas.",
 
