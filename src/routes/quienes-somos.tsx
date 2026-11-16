@@ -46,7 +46,7 @@ function QuienesSomos() {
         <div className="container-site grid items-center gap-12 lg:grid-cols-2">
           <Reveal>
             <SectionTitle
-              etiqueta="Nuestra empresa"
+              etiqueta="Nuestra empresa"sobre nuestra empresa
               titulo="Una empresa con raíces en el campo peruano"
             />
             <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
