@@ -5,7 +5,7 @@ import { NewsCard } from "@/components/site/NewsCard";
 import { noticias } from "@/data/noticias";
 import galMercado from "@/assets/gal-mercado.jpg";
 
-const titulo = "Noticias y actualidad | Aguaymanto Perú";
+const titulo = "Noticias y actualidad | El Dulce Aguaymanto";
 const descripcion =
   "Novedades de la empresa, información sobre el cultivo del aguaymanto y actualidad del mercado agrícola peruano.";
 

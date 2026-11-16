@@ -18,7 +18,7 @@ export const Route = createFileRoute("/noticias/$slug")({
       };
     }
     const { noticia } = loaderData;
-    const t = `${noticia.titulo} | Aguaymanto Perú`;
+    const t = `${noticia.titulo} | El Dulce Aguaymanto`;
     return {
       meta: [
         { title: t },

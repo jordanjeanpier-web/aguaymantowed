@@ -4,22 +4,22 @@
  */
 
 export const site = {
-  nombre: "AGUAYMANTO PERÚ",
-  nombreCorto: "Aguaymanto Perú",
-  eslogan: "Calidad y compromiso desde el campo peruano.",
+  nombre: "EL DULCE AGUAYMANTO",
+  nombreCorto: "El Dulce Aguaymanto",
+  eslogan: "Producción y venta de aguaymanto fresco de Limatambo, Cusco.",
   descripcion:
     "Producción, comercialización y venta de aguaymanto peruano seleccionado para clientes particulares, restaurantes, tiendas, distribuidores y mayoristas.",
 
   contacto: {
     // Número en formato internacional, solo dígitos (para el enlace de WhatsApp)
-    whatsapp: "51999999999",
-    whatsappMostrar: "[WHATSAPP]",
-    telefono: "[TELÉFONO]",
-    telefonoEnlace: "+51999999999",
-    correo: "[CORREO]",
-    direccion: "[DIRECCIÓN]",
-    ciudad: "[CIUDAD]",
-    horario: "[HORARIO DE ATENCIÓN]",
+    whatsapp: "51958476325",
+    whatsappMostrar: "+51 958476325",
+    telefono: "+51 958476325",
+    telefonoEnlace: "+51958476325",
+    correo: "jordan@aguaymantoweb.com",
+    direccion: "Comunidad Sauceda S/N, Limatambo - Anta",
+    ciudad: "Cusco",
+    horario: "Lunes a Sábado, 8:00 a.m. - 6:00 p.m.",
   },
 
   whatsappMensaje:

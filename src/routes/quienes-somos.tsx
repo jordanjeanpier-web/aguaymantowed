@@ -9,7 +9,7 @@ import { compromiso, historia, mision, valores, vision } from "@/data/empresa";
 import hero2 from "@/assets/hero-2.jpg";
 import galEmpaque from "@/assets/gal-empaque.jpg";
 
-const titulo = "Quiénes somos | Aguaymanto Perú";
+const titulo = "Quiénes somos | El Dulce Aguaymanto";
 const descripcion =
   "Conoce nuestra empresa, historia, misión, visión, valores y compromiso con la calidad del aguaymanto peruano.";
 
